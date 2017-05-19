@@ -1,0 +1,394 @@
+{
+"bannerList": [
+{
+"bannerTitle": "谷歌称20亿Android活跃量未统计中国大陆设备",
+"time": "作者：IT之家  时间：2017-5-19 8:30:11",
+"bannerDes": [
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "IT之家5月19日消息 在5月18日凌晨，谷歌举行了I/O 2017开发者大会，在发布会上谷歌宣布目前全球Android月活跃用户已经超过20亿，另外还宣布了Android O系统。20亿Android用户的成绩令人欣喜，但是令人尴尬的是，消息称谷歌表示并不包括中国大陆的安卓设备在内。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_news_desc0_01.jpg",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#222222",
+"bgcolor": "#ffffff",
+"content": "新浪科技驻美记者鄭峻在微博上称："
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "谷歌Android高管在问答环节说，昨天宣布的Android全球月活跃设备达到20亿并不包括中国大陆。"
+},
+{
+"imagePic": "",
+"color": "#222222",
+"bgcolor": "#ffffff",
+"content": "网友们也纷纷在评论中附和："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_news_desc0_02.jpg",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "全球有三大手机系统，第一谷歌Android，第二苹果iOS，第三中国安卓。意料之中，大陆的那是『安卓』"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "很多国内用户也了解这个情况，谷歌宣称的很多Android特性，比如谷歌助手、Google Play在国内由于某些因素不能使用。而国产手机大多预装自行修改的安卓系统，比如小米的MIUI、魅族的Flyme等等，其内置自家的应用商店，用户也可以选用其他应用商店。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "当然这里的Android设备统计不包括中国大陆安卓设备，并不意味着谷歌不承认这些安卓设备，但至少说明有很多安卓设备并不在谷歌的掌控之中。中国大陆的安卓生态有着自己的丛林法则。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_news_desc0_03.jpg",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "除此之外，记者还谈到了买运营商的Android手机就有升级迟缓和预装软件的问题，体验很不好，谷歌表示："
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "Pixel升级很快很频繁，给其他厂商做了示范。运营商，blahblah。。。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "显然谷歌也不能解决美国运营商Android定制手机的升级问题。"
+}
+]
+},
+{
+"bannerTitle": "谷歌Android Studio 3.0测试版发布：新增Kotlin语言支持",
+"time": "作者：IT之家  时间：2017-5-18 17:52:09",
+"bannerDes": [
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "IT之家5月18日消息 今年谷歌的I/O开发者大会有很多看点，尤其当你是一名Android开发者的话。在这次大会上，谷歌展示了Android Studio 3.0（Android Studio是最主要的Android应用程序开发工具）。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_news_desc1_01.jpg",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "谷歌表示，这次Android Studio 3.0的新功能包括新的应用程序性能分析工具，对Kotlin语言的支持以及提升大型应用程序开发项目中Gradle的构建速度，除此之外，Android Studio 3.0还有20多项新的关键特性。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "距Kotlin的问世已经有段时间了，如果你可以熟练使用JAVA，那Kotlin一定会给你一个惊喜，使用JAVA编程的开发者将会在Kotlin当中发现很多熟悉的元素，但你很快就会意识到，相比于JAVA，Kotlin是一种更加优雅的编程语言。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "Android Studio 3.0测试版和Kotlin插件现已发布，你可以在谷歌的站点下载。"
+}
+]
+},
+{
+"bannerTitle": "Android O改良Emoji表情 新增表情曝光",
+"time": "作者：新浪综合  时间：2017年05月19日 07:23",
+"bannerDes": [
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "Emoji表情是目前人们表达情绪的最佳方式，作为地球人都能看懂的一种“新型文字”，它甚至被称为“真正的世界通用语”，其地位不言而喻。谷歌在Android 4.4版本开始引入Emoji表情，从那时起每代的Android系统都会对整套Emoji表情进行完善，而日前Android O版本最新的Emoji也已经出现了。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_news_desc2_01.jpg",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "在Android 7 Nougat时代，谷歌对于Emoji的改动主要是将人物形象化，并使面部表情更加生动（同时期的iOS也做了同样的事）；到了最新的Android O，谷歌没有对所有表情的形状进行大规模重塑，但在Android 7的基础上更进一步，优化了色彩和阴影效果、重塑了黄脸系列表情的形状，并为面部表情加入更多的细节——可以算是一个“中期改款”。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_news_desc2_02.jpg",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "据悉，Android O加入了对于Emoji 5.0的支持，这意味着Unicode 10.0标准中的最新Emoji表情将会出现在Android O系统中。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_news_desc2_03.jpg",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "另外，谷歌还为开发者提供了Emoji兼容库，方便开发者们在自己的应用中加入Android O所支持的这些新Emoji。这一举措将会直接影响到我们每天的微信聊天：拥有了这个库之后，微信等即时通讯应用就可以在Android O正式发布前，将这些新的表情提前收录进去。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "那么现在问题来了——大家准备好用新的Emoji斗一波图了吗？别忘了持续关注Android O哦！"
+}
+]
+},
+{
+"bannerTitle": "别把Android看扁了 这些技术iPhone追不上",
+"time": "作者：环球网  时间：2017年05月15日 08:13",
+"bannerDes": [
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "今天智能手机本质上已经算得上一款微型计算机了，不论你拿出的是iPhone还是Android手机，早期在电脑上能够完成的事情，现在智能手机一样可以做到，可以浏览网页这点已经算是老新闻了，安装应用程序扩展更强大的功能更不在话下，更别说之前的作为独立的媒体播放器如MP3、MP4了，而且摄像头水平的提升，已经让很多人忘却了数码相机。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "智能手机仍在不断发展、壮大和更加成熟，从最初的黑白屏到彩屏，再到高像素密度的2K和4K屏，这点就是最好的例子。不过，除了屏幕变得更好之外，我们可以看到曾经萌芽的认为不可能的硬件或组件，现在越来越多的成为了标准和趋势，例如指纹识别技术。今天我们就来简单的回顾一下，除了iPhone之外，那些来自Android阵营，并且对智能手机后移动技术有大贡献或预测未来的重要特征。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "最不可逆的趋势：大屏幕“跨界设备”"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "说到大屏幕“跨界设备”的成长，一切都要从戴尔发布的Dell Streak说起。虽然戴尔从来不是Android阵营的主角，但却发布了全球第一款5英寸的Android智能手机，第一批接触Android智能手机机友应该对其应该不陌生，当时很多烧友被其巨大的屏幕所震撼。不过，“跨界设备”展现的杀伤力应该从三星Galaxy Note首次亮相开始，从那时起智能手机的屏幕不断被放大。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_news_desc3_01.jpg",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "事实上此后谷歌的Nexus系列也在跟随，从最初的3.7英寸Nexus One发展到了到6英寸的Nexus 6。“跨界设备”火了之后，整个智能手机领域被嘲笑的对象变成了小尺寸的智能手机，尤其是iPhone，后面的事情大家应该都知道了。但不得不说，大屏幕的趋势真正来源于Android阵营，有戴尔Streak作为先驱，随后三星将其发扬光大，现在很多手机已经从5.5英寸起步了，更大的屏幕还在随着紧凑设计改变而增加尺寸。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "技术卖点大趋势：双后置摄像头"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "现在的手机动不动就上双摄像头了，比如最近新发布的坚果Pro，很多中低端智能手机也开始普及。但其实双摄像头已经吹嘘好几年时间了，早在2014年3月份的时候，HTC就发布了第一款双后置摄像头的手机HTC One M8。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_news_desc3_02.jpg",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "尽管HTC 10没有双摄的威力，但当时M8的双摄令人期待，已经开始玩今天很多双摄手机都在玩的“景深”功能了，当然相比今天肯定存在很多不足，但理论上代表了今天双摄手机在功能上的发展。现在双摄像头的发展趋势没有停留，我们接下来还会看大更多的双摄手机，不只是高端机，中低端手机最低也提供有黑白+彩色的方案，甚至还会继续玩出来四摄像头（双前置+双后置）。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "正成为主流趋势：USB Type-C接口"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "iPhone有自己的接口，但只是从30针演变成了Lightning。而Android阵营则直接从microUSB接口直接进化到了USB Type-C，如今microUSB已经开始逐渐被USB Type-C接口取代，越来越多的手机默认设计。主要是因为老microUSB数据和电力传输有限，而且正插反插一定要对准，这些因素开始被手机性能的提升和使用体验的变化而遭到唾弃。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_news_desc3_03.jpg",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "USB Type-C接口真正诞生的日子是2014年的夏季，你可能印象最深的设备不是智能手机，而是先后采用USB Type-C接口的苹果MacBook和谷歌Pixel平板电脑。但是，实际上国产手机厂商还真能抢夺第一，真正第一款采用USB Type-C接口的手机是来自乐视的乐1，该机子在2015年春季登场，此后Android阵营便有大量机型跟进，包括谷歌的Nexus 6P和5X。现在2017年，USB Type-C已经接近于智能手机通用标准了，很多旗舰标配，而iPhone暂时唯有动静。\n习以为常的趋势：2K QHD分辨率\n当年高像素密度是iPhone引领趋势，但Android阵营从800 x 480进化到1280×720之后，主流趋势就掌握在Android手机上了。如今2560×1440像素的屏幕在很多手机上成为标配，虽然1080p分辨率的手机不少，但更多消费者已经迫不及待地期待2K之后的下一次突破了。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_news_desc3_04.jpg",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "有趣的是，在分辨率上争第一的也是国产手机厂商，第一款配备2560×1440像素的智能手机是来自VIVO于2013年年底推出的Xplay 3S，而且这块屏幕有6英寸的大小。其实在当时，1080p显示屏幕才刚刚开始普及开来，很多低端机还停留在720p正要革新，但2K却已经出发。无论是厂商还是用户对显示屏的素质追求从不停歇，所以今天很多旗舰手机都标配了2K QHD分辨率的屏幕。\n不是最火但仍最被期待趋势：无线充电"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "一开始我们就说了，智能手机是如今就相当于微型电脑或移动计算设备，而且与传统计算机不同的，智能手机一切都是围绕“无线缆”展开，包括连接互联网和通讯，可更重要的是，使用时维持供电完全无需任何线缆。无线连接耳机早就已经可以通过蓝牙实现，但毕竟电池供电始终不能维持长久续航，所以在保留无线缆的情况下，下一步机友最希望成为趋势的就是无线充电。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "在Android阵营中首日引入无线充电的机子是HTC 2012年12月推出的Droid DNA，该机子是美版定制机，不明白为在亚洲以Butterfly命名推出时去掉了无线充电。当时，Droid DNA仅2020mAh的电池，显然对比今天就是不太够用的结果，所以HTC为其提供了Qi无线感应充电。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_news_desc3_05.jpg",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "今天很多机子也开始提供无线充电，通过一些官方提供的配置就是实现，甚至还有些机子一次性支持两种无线充电标准。但无线充电的问题还是无法解决，例如充电速度比有线慢得多。好就好在无线充电的命运没有停止，仍在不断发展和进步中，据说iPhone新一代也将紧跟无线充电的步伐了。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "又一即将成为主流的新趋势：18:9屏幕比例"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "观察Android阵营，你一定发现手机变得越来越大，5.5英寸或更大的机型比比皆是，不过问题上屏幕越大就越笨重，所以更紧凑的屏幕设计变成了新的趋势，而新的18:9屏幕比例目前最能让手机设计最紧凑。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "16:9已经流行很长一段时间了，无论是电视机、显示器还是笔记本电脑也都是这个16:9的比例，但18:9正在萌芽。为什么说此屏幕比例会得到成长呢？因为18:9也可以说是2:1，那么屏幕的长度正好就是宽度两倍，更能延伸到屏幕正面的上下两部分，这是在边到边窄边框宽度既定的情况下，增大屏幕的最佳方式之一。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_news_desc3_06.jpg",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "当然了，现在只有LG G6和三星Galaxy S8是这种新兴起的屏幕比例，但是据说会有更多手机厂商跟进，包括苹果的新一代iPhone。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "最后，说了那么多Android阵营带出来的手机主流趋势，可能还有些遗漏的没提到，但就你们来看，Android手机下一个继续带来手机行业的趋势会是什么呢？"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "免责声明：本文仅代表作者个人观点，与环球网无关。其原创性以及文中陈述文字和内容未经本站证实，对本文以及其中全部或者部分内容、文字的真实性、完整性、及时性本站不作任何保证或承诺，请读者仅作参考，并请自行核实相关内容。"
+}
+]
+},
+{
+"bannerTitle": "Google宣布全新“Treble”Android系统更新高效推送项目",
+"time": "作者：cnBeta.COM  时间：2017年05月13日 09:14",
+"bannerDes": [
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "尽管 Android 是全球市占率最大的移动操作系统，但 Google 却一直被“碎片化”的问题所困扰。另外在安全更新方面，亦非常受制于最终设备制造商们的推送时效。不过在未来，Android 的更新问题将得到更直接的解决，因为 Google 已于本周宣布了“Project Treble”。项目领队 Iliyan Malchev 表示：从 Android O 开始，所有设备都将配备 Project Treble 。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_news_desc4_01.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "Treble 将修正当前 Android OS 框架升级的混杂局面，以简化当前的更新推送的流程。此前在将 Android 更新推送给最终用户之前，还需要设备制造商们进行一番部署。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_news_desc4_02.jpg",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "Iliyan Malchev 在 Android 开发者博客的一篇文章中写到：Google 会向制造商提供一个稳定的接口，让它们可以接触到 Android 中特定的硬件部分。比如，设备制造商就可以选择只向客户推送一个仅更新了 Android OS 框架的新版，而无需进行额外的工作。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_news_desc4_03.jpg",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "有了 Treble 之后，Google 就能够比以前拥有更高的 Android OS 更新传递效率，这有助于其提升面对苹果 iOS 时的竞争力。"
+}
+]
+}
+]
+}
