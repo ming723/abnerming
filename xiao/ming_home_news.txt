@@ -1,0 +1,88 @@
+{
+"dayNews": [
+{
+"newsTitle":"谷歌称20亿Android活跃量未统计中国大陆设备",
+"newsTime":"2017-5-19 8:30:11",
+"newsDes":"在5月18日凌晨，谷歌举行了I/O 2017开发者大会，在发布会上谷歌宣布目前全球Android月活跃用户已经超过20亿，另外还宣布了Android O系统。20亿Android用户的成绩令人欣喜，但是令人尴尬的是，消息称谷歌表示并不包括中国大陆的安卓设备在内。",
+"newsAuthor":"IT之家",
+"newsUrl":"http://www.ithome.com/html/android/309563.htm",
+"newsId":"0"
+},
+{
+"newsTitle":"谷歌Android Studio 3.0测试版发布：新增Kotlin语言支持",
+"newsTime":"2017-5-18 17:52:09",
+"newsDes":"今年谷歌的I/O开发者大会有很多看点，尤其当你是一名Android开发者的话。在这次大会上，谷歌展示了Android Studio 3.0（Android Studio是最主要的Android应用程序开发工具）。谷歌表示，这次Android Studio 3.0的新功能包括新的应用程序性能分析工具，对Kotlin语言的支持以及提升大型应用程序开发项目中Gradle的构建速度，除此之外，Android Studio 3.0还有20多项新的关键特性。",
+"newsAuthor":"IT之家",
+"newsUrl":"http://www.ithome.com/html/android/309493.htm",
+"newsId":"1"
+},
+{
+"newsTitle":"Android O改良Emoji表情 新增表情曝光",
+"newsTime":"2017年05月19日 07:23",
+"newsDes":"Emoji表情是目前人们表达情绪的最佳方式，作为地球人都能看懂的一种“新型文字”，它甚至被称为“真正的世界通用语”，其地位不言而喻。谷歌在Android 4.4版本开始引入Emoji表情，从那时起每代的Android系统都会对整套Emoji表情进行完善，而日前Android O版本最新的Emoji也已经出现了。",
+"newsAuthor":"新浪综合",
+"newsUrl":"http://tech.sina.com.cn/mobile/n/n/2017-05-19/doc-ifyfkqiv6525495.shtml",
+"newsId":"2"
+},
+{
+"newsTitle":"别把Android看扁了 这些技术iPhone追不上",
+"newsTime":"2017年05月15日 08:13",
+"newsDes":"今天智能手机本质上已经算得上一款微型计算机了，不论你拿出的是iPhone还是Android手机，早期在电脑上能够完成的事情，现在智能手机一样可以做到，可以浏览网页这点已经算是老新闻了，安装应用程序扩展更强大的功能更不在话下，更别说之前的作为独立的媒体播放器如MP3、MP4了，而且摄像头水平的提升，已经让很多人忘却了数码相机。",
+"newsAuthor":"环球网",
+"newsUrl":"http://tech.sina.com.cn/roll/2017-05-15/doc-ifyfekhi7675686.shtml",
+"newsId":"3"
+},
+{
+"newsTitle":"Google宣布全新“Treble”Android系统更新高效推送项目",
+"newsTime":"2017年05月13日 09:14",
+"newsDes":"尽管 Android 是全球市占率最大的移动操作系统，但 Google 却一直被“碎片化”的问题所困扰。另外在安全更新方面，亦非常受制于最终设备制造商们的推送时效。不过在未来，Android 的更新问题将得到更直接的解决，因为 Google 已于本周宣布了“Project Treble”。项目领队 Iliyan Malchev 表示：从 Android O 开始，所有设备都将配备 Project Treble 。",
+"newsAuthor":"cnBeta.COM",
+"newsUrl":"http://www.cnbeta.com/articles/soft/612095.htm",
+"newsId":"4"
+},
+{
+"newsTitle":"Google Fuchsia系统真机运行视频：卡片式是最大亮点",
+"newsTime":"2017年05月12日 10:49",
+"newsDes":"Google Android 是当前全世界最流行的移动操作系统，但也有报道称该公司在秘密开发一款名叫“Fuchsia”的新系统。本周早些时候，有媒体曝光了该系统的多张截图。尽管应用是当前移动平台的重中之重，但 Fuchsia 更专注于信息方面，并以滚动卡片的形式呈现。之后不久，有人通过 PC 开发者工具演示了一下 Fuchsia OS 。不过现在，9to5Google 又晒筛出了该系统的真机运行视频。",
+"newsAuthor":"cnBeta.COM",
+"newsUrl":"http://www.cnbeta.com/articles/tech/610043.htm",
+"newsId":"100"
+},
+{
+"newsTitle":"Google关闭Android 7.x Beta项目 开始迎接Android O",
+"newsTime":"2017年05月08日 06:50",
+"newsDes":"我们离Android O（即Android 8.0）越来越近了，目前谷歌已经关闭了Android 7.x Beta牛轧糖的测试项目，并允许部分机型用户提前尝鲜新版。",
+"newsAuthor":"快科技",
+"newsUrl":"http://www.cnbeta.com/articles/tech/610043.htm",
+"newsId":"100"
+},{
+"newsTitle":"Android Pay推出“认脸”功能 识别支付合作伙伴",
+"newsTime":"2017年05月07日 23:32",
+"newsDes":"有用户通过反编译，发现谷歌的Android Pay支付系统已经集成了某种形式的人脸识别功能。Android Pay 1.22版本包含几个和其中Visual ID（视觉身份）功能相关的字符串。",
+"newsAuthor":"cnBeta.COM",
+"newsUrl":"http://www.cnbeta.com/articles/tech/610035.htm",
+"newsId":"100"
+},{
+"newsTitle":"Google发布了DIY开源AI硬件产品--Voice Kit",
+"newsTime":"2017年05月05日 11:29",
+"newsDes":"Google一直致力于人工智能方面的发展，Google Assistant以及语音助手项目都使用人工智能来改善我们的日常生活。",
+"newsAuthor":"cnBeta.COM",
+"newsUrl":"http://www.cnbeta.com/articles/tech/609519.htm",
+"newsId":"100"
+},{
+"newsTitle":"牛扎糖正式止步Android 7.1.2 谷歌全面转向8.0系统",
+"newsTime":"2017年05月05日",
+"newsDes":"虽然Android 7.0发布快一年，整体的用户占比刚超过7%，但是谷歌还是义无反顾地向前推进着。据外媒报道，在对Android O的首个开发者预览版打磨了一段时间之后，谷歌正式计划发布首个公测Beta版（应该是I/O大会跑不了了）。",
+"newsAuthor":"快科技",
+"newsUrl":"http://www.cnbeta.com/articles/soft/609617.htm",
+"newsId":"100"
+},{
+"newsTitle":"[图]五月Android版本发布图公布：7.1版本占比为0.5%",
+"newsTime":"2017年05月03日 11:49",
+"newsDes":"同往常一样根据最近7天内（截至5月2日）从Google Play上收集的数据，Google公布5月最新Android平台版本占比情况。",
+"newsAuthor":"cnBeta.COM",
+"newsUrl":"http://www.cnbeta.com/articles/soft/608741.htm",
+"newsId":"100"
+}
+]
+}

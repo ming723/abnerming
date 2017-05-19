@@ -1,0 +1,43 @@
+{
+"dayNowDes": [
+{
+"dayTitle": "Android 模块化探索与实践",
+"dayUrl": "",
+"dayId": 0,
+"dayTime":"2017-5-13",
+"dayDes":"从 2016 年开始，模块化在 Android 社区越来越多的被提及。随着移动平台的不断发展，移动平台上的软件慢慢走向复杂化，体积也变得臃肿庞大；为了降低大型软件复杂性和耦合度，同时也为了适应模块重用、多团队并行开发测试等等需求，模块化在 Android 平台上变得势在必行。阿里 Android 团队在年初开源了他们的容器化框架 Atlas 就很大程度说明了当前 Android 平台开发大型商业项目所面临的问题。",
+"dayUrl":"https://zhuanlan.zhihu.com/p/26744821?group_id=843956648862175232",
+"dayAuthor":"张磊",
+"newsId":"100"
+},
+{
+"dayTitle": "Android APK 瘦身 - JOOX Music项目实战",
+"dayUrl": "",
+"dayId": 1,
+"dayTime":"2017-5-13",
+"dayDes":"JOOX Music是腾讯海外布局的一个音乐产品，2014年发布以来已经成为5个国家和地区排名第一的音乐App。东南亚是JOOX Music的主要发行地区，由于JOOX Music所面对的市场存在很多的低端机型，并且这些市场的网络环境相对来说是比较差的，为了提升下载转化率，对JOOX Music进行APK瘦身是必不可免的。",
+"dayUrl":"https://mp.weixin.qq.com/s/9IGYG6hNKL1V7N_p16p2Hg",
+"dayAuthor":"腾讯Bugly",
+"newsId":"100"
+},
+{
+"dayTitle": "深度了解Android即将支持的Java 8，你准备好了吗？",
+"dayUrl": "",
+"dayId": 2,
+"dayTime":"2017-5-13",
+"dayDes":"Java 9预计今年也会正式发布，Java 8这个最具变革性且变革性最适于GUI程序的版本，Android终于准备正式支持。从自己开发JavaFx的感受，说一说Java 8应该使用的新特性。程序员，你应该拥抱变化。 ",
+"dayUrl":"https://mp.weixin.qq.com/s/rT-Qm9Cx28V-pzDSEktuEw",
+"dayAuthor":"腾讯WeTest",
+"newsId":"100"
+},{
+"dayTitle": "如何编写自定义响应式基础类型",
+"dayUrl": "",
+"dayId": 3,
+"dayTime":"2017-5-13",
+"dayDes":"本文是 Advanced RxJava http://akarnokd.blogspot.com/ 系列博客的中文翻译，已征得作者授权。该系列博客的作者是 RxJava 的核心贡献者之一。翻译的内容使用 知识共享 署名-非商业性使用-相同方式共享 4.0 国际 协议进行许可，转载请注明出处。如果发现翻译问题，或者任何改进意见，请 在 GitHub 上提交 issue 。",
+"dayUrl":"https://blog.piasy.com/AdvancedRxJava/2017/05/05/writing-custom-reactive-base-type/",
+"dayAuthor":"互联网",
+"newsId":"100"
+}
+]
+}

@@ -1,0 +1,36 @@
+{
+"openList": [
+{
+"openTitle": "aurora-imui",
+"openUrl": "https://github.com/jpush/aurora-imui",
+"openTime":"2017-5-13",
+"openDes":"General IM UI components. Android/iOS ready. 通用 IM 聊天 UI 组件，已经同时支持 Android/iOS。"
+},{
+"openTitle": "Oblique",
+"openUrl": "https://github.com/akshay2211/Oblique",
+"openTime":"2017-5-13",
+"openDes":"With Oblique explore new styles of displaying images"
+},{
+"openTitle": "FingerprintIdentify",
+"openUrl": "https://github.com/uccmawei/FingerprintIdentify",
+"openTime":"2017-5-13",
+"openDes":"一个可拓展的Android指纹识别API兼容库，目前集成了 安卓原生API 以及 三星 和 魅族 的指纹SDK。"
+},{
+"openTitle": "EasyCalendar",
+"openUrl": "https://github.com/shichaohui/EasyCalendar",
+"openTime":"2017-5-13",
+"openDes":"Quickly customize the calendar UI. You can use EasyCalendar to quickly get the calendar style UI."
+},{
+"openTitle": "litho-picasso",
+"openUrl": "https://github.com/charbgr/litho-picasso",
+"openTime":"2017-5-13",
+"openDes":"Picasso image-loading Component for Litho"
+},{
+"openTitle": "android选择器类库之整合",
+"openUrl": "https://github.com/addappcn/android-pickers",
+"openTime":"2017-5-13",
+"openDes":"android-pickers提供切换不同的模式（目前有普通模式，3d滚轮模式），包括日期及时间选择器、单项选择器、城市地址选择器、数字选择器等"
+}
+
+]
+}
