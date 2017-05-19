@@ -1,0 +1,41 @@
+{
+"dayNews": [
+{
+"newsTitle":"从1到7，读懂习近平“一带一路”演讲为何收获27次掌声",
+"newsTime":"2017-05-15",
+"newsDes":"“一带一路”国际合作高峰论坛14日在北京开幕，习近平出席开幕式并发表主旨演讲。演讲过程中，据媒体粗略统计，全场响起27次掌声。",
+"newsAuthor":"人民日报",
+"newsUrl":"http://mp.weixin.qq.com/s?__biz=MjM5MjAxNDM4MA==&mid=2666157387&idx=1&sn=3f9d9c3e98a15148ef4424858c73b4f1&chksm=bdb23c088ac5b51e0a7c38cdc48b9230ecca39eae8c6f6a23d14d566a7c754504f7436abf403&mpshare=1&scene=23&srcid=0515zcEAdDJi1LNlHKMuyM1U#rd",
+"newsId":"100"
+},
+{
+"newsTitle":"2017 年最新最全阿里、腾讯、百度、华为、京东、搜狗和滴滴面试题汇集",
+"newsTime":"2017-05-15",
+"newsDes":"前一段时间和大牛们交流了一下，据反馈现在Android岗位也没有以前那么多了，没这么好找了，面临2016年寒冬季节，大量公司模仿O2O模式导致死掉企业的很多，在加之培训机构大量的培训人，导致供大于求，当然这不意味着饱和，只是市场更趋于合理一些（只要技术好不用怕的）。最近结合一些面试的同学和大牛们（张旭童）反馈，前几天听童哥去阿里面试顺便整理了下一些面试题目。希望对大家有所帮助，后期会不断更新添加新的面试题。可以帮大家查漏不缺。以下是（2016、2017 、阿里、腾讯、百度、华为、京东、搜狗和滴滴面试题汇集）",
+"newsAuthor":"Java和Android架构",
+"newsUrl":"http://mp.weixin.qq.com/s?__biz=MzI0MjE3OTYwMg==&mid=2649549462&idx=1&sn=b157d60468b71e8bc5ffddb9ad232a07&chksm=f11801ebc66f88fdda180a2bb384970b65b8cb51048db2628f0d6b62411216d697fa2d2a9905&mpshare=1&scene=23&srcid=0515qKYhEtJPy3f63xjV6Ece#rd",
+"newsId":"100"
+},{
+"newsTitle":"2017年谷歌I/O大会精彩看点细数【Bus Weekly】49期",
+"newsTime":"2017-05-15",
+"newsDes":"据外媒报道，谷歌一年一度的I/O开发者大会将会在下周三于加利福尼亚州山景城的海岸线圆形剧场召开，会议持续时间为5月17日到19日。谷歌经常会在I/O大会上宣布一些新的产品发展计划。下面让我们看看此次I/O大会将会有哪些值得期待的看点。",
+"newsAuthor":" 小巴士",
+"newsUrl":"http://mp.weixin.qq.com/s?__biz=MzA3MjgwNDIzNQ==&mid=2651940998&idx=1&sn=9c7cb14b677049eb37fcfff087d33d4e&chksm=84fd7a62b38af37428513846d0a6c363ee9cfba5ce9dd7024b38401d5e8741ad56d723ce4500&mpshare=1&scene=23&srcid=0515upzMXpx2mhQyPOsQmbNb#rd",
+"newsId":"100"
+},{
+"newsTitle":"千万不要小看一个会吃的女人",
+"newsTime":"2017-05-14",
+"newsDes":"我在南京实习的时候，认识了一位和我年龄相仿的同事小雅，两个女孩子便相约一起合租。搬家那天，正值江南酷暑，又热又累，衣服整个被汗黏在身上，感觉快要喘不上气。傍晚，终于搬进了新家，两人又强打精神去超市采购一些生活用品，我甚至都没有力气去留意小雅买了些什么东西。",
+"newsAuthor":"十点读书",
+"newsUrl":"http://mp.weixin.qq.com/s?__biz=MjM5MDMyMzg2MA==&mid=2655487340&idx=1&sn=05e4e777413d39fde61f1c33caf7034a&chksm=bdf5a0978a822981face4dde5da29d74ce9a0daea003d94ffac48a97f30cc7e5bd83547b0e47&mpshare=1&scene=23&srcid=0515mxQgt6WwGbqSkUiBmt7V#rd",
+"newsId":"100"
+},{
+"newsTitle":"几行代码就能实现为何要多此一举",
+"newsTime":"2017-01-05",
+"newsDes":"记得分享了一篇文章到一个android群里，不一会，有人就开始问了，我用某某开源三行代码就能搞定，何须那么复杂，我顿时哑口无言，愣的不知所措，对啊，三行代码就能实现了，我这南辕北辙拐了一大圈，图个啥，我就弱弱的问，它是咋实现的？管它咋实现干嘛，会用不就得了，这是他给我的答案。",
+"newsAuthor":"AbnerMing",
+"newsUrl":"http://mp.weixin.qq.com/s?__biz=MzI1NTU4MjU3OA==&mid=2247483789&idx=1&sn=fe108e064f156a92af2ff3d653cda109&chksm=ea328990dd450086288213fbd51fb94c244c982aa5830964ab77e909ae8ac7a8e9752386554a&mpshare=1&scene=23&srcid=0515mcRCC0w5sMDw6dUcdaUV#rd",
+"newsId":"100"
+}
+]
+}
