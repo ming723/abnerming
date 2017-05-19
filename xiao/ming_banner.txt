@@ -1,0 +1,19 @@
+{
+"bannerUrls": [
+{
+"bannerTitle": "",
+"bannerUrl": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner01.png",
+"bannerId": 0
+},
+{
+"bannerTitle": "",
+"bannerUrl": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner02.png",
+"bannerId": 1
+},
+{
+"bannerTitle": "",
+"bannerUrl": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner03.png",
+"bannerId": 2
+}
+]
+}
