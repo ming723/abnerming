@@ -1,0 +1,718 @@
+{
+"bannerList": [
+{
+"bannerTitle": "ListView的终极优化",
+"time": "作者：AbnerMing   时间：2017-03-17 17:42",
+"bannerDes": [
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner01.png",
+"color": "#1e90ff",
+"bgcolor": "#ffffff",
+"content": "本篇文章你会了解以下内容："
+},
+{
+"imagePic": "",
+"color": "#1e90ff",
+"bgcolor": "#ffffff",
+"content": "1、抽取ViewHolder,实现优化第一步"
+},
+{
+"imagePic": "",
+"color": "#1e90ff",
+"bgcolor": "#ffffff",
+"content": "2、抽取公共Adapter，告别冗余方法"
+},
+{
+"imagePic": "",
+"color": "#1e90ff",
+"bgcolor": "#ffffff",
+"content": "3、控件直接赋值，让Adapter再次优化"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "ListView不得不说是Android开发当中出现率相当高的一个控件，什么资讯列表，联系人列表，消息列表等等，无不有它的身影存在。既然项目中有太多的地方会用到它，传统的代码逻辑我们是怎么使用的呢？每写一个ListView,都要去写一个Adapter类，一个ViewHolder类，这几乎是我们必须要操作的，以致于有太多太多的冗余代码，让我们感到真的不厌其烦，一个两个还可以，十个八个，就真的有点太崩溃了，不仅代码繁琐，还会占用内存，为了解决这样的一个问题，下面就要开始对其抽取优化，代码之间从上到下进行衔接，不要跳过看啊。"
+},
+{
+"imagePic": "",
+"color": "#222222",
+"bgcolor": "#ffffff",
+"content": "1、抽取ViewHolder,实现优化第一步"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "我们知道正常的ViewHolder，会在Adapter的getView方法里去操作很多事情，创建实例，赋值控件，setTag和getTag等,如下代码所示，是我们最常用的模式，这里我只用了两个控件，其实开发中有很多的View,对ViewHolder的优化，就是把这些代码封装进行抽取。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc_01.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "自定义一个ViewHolder类，实现构造方法，既然要实现对以上的代码进行一个抽取，那么getView里的参数，ViewHolder类大部分都需要用到，在ViewHolder类中,写一个静态方法，用于获取ViewHolder,其判断逻辑和以上代码思路一致，convertView若不存在就去创建ViewHolder，若存在就复用。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc_02.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "实现其构造方法，用于convertView不存在时进行对其实例："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc_03.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "mView是用于存储各个控件View,在这里为什么要用SparseArray而不用Map,我们可以去查看下源码，其实对于键为int类型，SparseArray要比map更加有效的使用内存。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "mPosition是记录索引位置。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "mConverView就是创建的View对象，注意看上述代码，它是在convertView为null的情况下，才去创建的。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "写一个方法，用于通过ViewHolder来获取各个控件："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc_04.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "再写一个获取layout的方法："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc_05.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "经过以上代码，对于ViewHolder，我们基本上就抽取完成了，回过来，我们再看adapter里的getView方法(注意，原来adapter里的ViewHolder类可以对其删除),是不是一下整洁了许多。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc_06.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#222222",
+"bgcolor": "#ffffff",
+"content": "2、抽取公共Adapter，告别冗余方法"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "ViewHolder抽取完之后，省去了太多的代码，但是我们会发现Adapter里除了getView方法，其它三个也是重复的，那么接下来，我们就对Adapter进行抽取优化,新建一个万能的Adapter类，继承于BaseAdapter,记住要是抽象的，把getView方法设成抽象方法，这样其它Adapter继承这个万能Adapter，只需要重写getView方法即可。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc_07.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "在上述代码中，细心的同志的可能看到了，实现其构造方法时，我传入了一个layoutId，其实就是一个XML资源，引入它，说白了，在getView方法里我连 ViewHolder viewHolder=ViewHolder.getViewHolder(mContext,position,convertView,parent,R.layout.item_view);这段代码我也不想去写，怎么办呢？很简单getView方法不去抽象化，而引出一个抽象的方法，具体可以改成以下方式："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc_08.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "以后我们所有的Adapter继承这个万能的Adapter之后，只需要重写convert这个方法就好了，Object item是一个Bean,获取时要进行强转。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc_09.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "看看以上的代码，是不是就简单了很多呢。"
+},
+{
+"imagePic": "",
+"color": "#222222",
+"bgcolor": "#ffffff",
+"content": "3、控件直接赋值，让Adapter再次优化"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "经过以上的优化之后，代码大大的减少了，但是，我还想进行对其优化，也就是说，我连setText都不想去那么麻烦，这样的话，我们就是可以在ViewHolder这个类中去写控件赋值方法："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc_10.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "再看convert方法,是不是又一下简单的很多。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc_11.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "当然了对于其它控件你也可以这样去做，比如ImageView:"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc_12.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+}
+]
+},
+{
+"bannerTitle": "60分钟搞定《FlappyBird》飞扬的小鸟游戏",
+"time": "作者：AbnerMing   时间：2017-01-09 09:33",
+"bannerDes": [
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner02.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "自定义控件系列，前前后后分享了三四篇了，其实，在自定义控件的道路中，我们只仅仅迈出了一小步，未来的时间我们仍需走在路上，去探索那些未知的自定义领域。今天，是个周末的时刻，少些烦躁的代码，来一起实现一个有趣的类似FlappyBird小游戏吧；对于FlappyBird这个小游戏，相信在看这篇文章的你并不陌生，其富有挑战又有一丝乐趣，让玩者玩的不亦乐乎，曾经风靡一时，虽已经离发行过去了三年多的时间，但仍能激起我们心中那份玩游戏时的跌宕起伏。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "自定义控件系列，前前后后分享了三四篇了，其实，在自定义控件的道路中，我们只仅仅迈出了一小步，未来的时间我们仍需走在路上，去探索那些未知的自定义领域。今天，是个周末的时刻，少些烦躁的代码，来一起实现一个有趣的类似FlappyBird小游戏吧；对于FlappyBird这个小游戏，相信在看这篇文章的你并不陌生，其富有挑战又有一丝乐趣，让玩者玩的不亦乐乎，曾经风靡一时，虽已经离发行过去了三年多的时间，但仍能激起我们心中那份玩游戏时的跌宕起伏。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "先看一下我们最终要实现的效果："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc2_01.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "其实就是一个特别简单的动作，点击屏幕时，使小球做上下跳动，进行绕过障碍物，碰到障碍物或者碰到底部，则游戏结束，这个小游戏，总体代码不足400行，比较简单，整个Demo地址为：http://download.csdn.net/detail/ming_147/9731585，来，开始一点点的实现吧。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "对于这个GIF动图，初显示时其实就是打开应用所启动的Activity,无非就是设置了几个TextView,这个过于简单，就不再叙述，小球所在的页面就是第二页面时，也是一个Activity,这个Activity是游戏的控制页，其实里面就是自己定义的一个继承于SurfaceView的一个View类。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "可能有同志要问来，为什么要继承SurfaceView而不是继承View？相信做过小游戏的同志们都会或多或少的知晓，其实SurfaceView是View的子类，内嵌了用于专门绘制的Surface，可以控制其格式和尺寸，及Surface的绘制位置，并且，SurfaceView提供了一个可见的区域，只有在可见区域内Surface才可见，还有SurfaceView默认是使用双缓冲技术，它支持在子线程中绘制图像，不会阻塞主线程，对于游戏的开发它是再适合不过的。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "首先呢自定义一个类继承于SurfaceView，在构造方法中，我们可以做一些初始化工作："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc2_02.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "初始化工作需要获取SurfaceHolder, SurfaceHolder提供了访问和控制SurfaceView背后的Surface的相关方法，所以这个一定进行获取，获取SurfaceHolder之后，调取addCallBack()方法，让自定义的类实现SurfaceHolder.Callback接口，其实现的三个方法这里做一个简单描述："
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "surfaceCreated(SurfaceHolder holder)：surface创建的时候调用，一般在该方法中启动绘图的线程。\nsurfaceChanged(SurfaceHolder holder, int format, int width,int height)：surface尺寸发生改变的时候调用，如横竖屏切换。\nsurfaceDestroyed(SurfaceHolder holder) ：surface被销毁的时候调用，如退出游戏画面，一般在该方法中停止绘图线程。\n对于初始化中其它方法也做一个简单说明，其实源码中也有相关说明：\n\nmPaint.setAntiAlias(true)方法主要是为画笔设置抗锯齿，这样做的作用就是让图像边缘可以相对清晰一点。\nmPaint.setStyle(Paint.Style.STROKE);设置画笔为空心。\nsetFocusable(true);设置可以获取焦点。\nsetFocusableInTouchMode(true);设置此视图是否可以在触底模式下接受焦点。\nthis.setKeepScreenOn(true);控制其屏幕是否应继续。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "对于小球，虚线，障碍物，关数，我们尽量在surfaceCreated进行初始化，上面也有说明，我们可以在这个方法里获取屏幕的宽高，另外我们再另起一个线程，因为接下来我们用到很多处理数据，及数据很多的地方，isStartGame这个布尔类型的值用于标示游戏是否结束。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc2_03.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "刚进入游戏页面，小球是不动的，虚线也是静止的，我们可以看下下面的初始化代码；"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc2_04.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "floorLine就是我定义的一个存储底部虚线xy坐标的一个数组："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc2_05.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "levelText是存储关数的xy坐标的一个数组,level_value是默认第0关。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc2_06.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "cirle是存储小球的xy坐标的一个数组："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc2_07.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "rectangleList这个集合是用于存储障碍物的坐标集合：\nprivate ArrayList<int[]> removeRectangleList = new ArrayList<int[]>();"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "一切初始化工作完成之后，我们就是绘制小球，虚线，障碍物了，前边我们起了一个线程，这些工作我们就可以放到子线程去实现："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc2_08.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "isStartGame这个值前边说过，用于标示游戏是否结束，如果一直没结束，那么run方法就一直执行，记得在surface销毁时，改为false。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc2_09.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "关于绘制，前边几篇自定义控件中对这些绘制方法已经做了很多的例子，主要就使确定位置，这是非常重要的，获取画笔，我们可以new一个，也可以从SurfaceHolder里面获取，关于绘制虚线，其y轴是保持不变的，宽度一定，只是x轴逐渐递增；绘制圆其半径也是一定，x轴坐标固定，只有y轴上下移动，关数和障碍物的绘制，只要位置确定，其绘制也类似，当一切画完之后，记得一定要去调用unlockCanvasAndPost来改变内容。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc2_10.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc2_11.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "这里我把游戏分为来三个状态，分别是，游戏前，游戏中，游戏结束三个状态："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc2_12.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "当手点击屏幕之后，当小球落至虚线位置，或者碰到障碍物，则游戏结束，返回上一个activity，否则继续。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc2_14.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc2_15.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc2_16.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "60分钟，我想，是完不成的，因为这个Demo花费了一下午的时间，能够顺利的完成这个小游戏Demo,感谢百度翻译，因为有许多SurfaceView类中的方法，都是通过翻译才大概的弄懂它，也特别感谢许多默默无闻中一直奉献的同志们。"
+}
+]
+},
+{
+"bannerTitle": "一步步搞定Android行情K线蜡烛图（带十字光标）",
+"time": "作者：AbnerMing   时间：2017-01-09",
+"bannerDes": [
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "行情K线图也就是我们常说的蜡烛图，是金融类软件里可以说必不可少的，无论日K, 周K,月K，还是分钟K,准确的来表达个股在一定时间内涨跌走势，K线图有着不可无视的作用，其绘制过程也是彰显一个程序员对自定义控件的熟练程度，尤其是对Canvas的灵活运用，绘线，绘边框，及位置的选取，比例的分配，今天这个Demo,则一步步为你诠释。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "按惯例，先看下今天要实现的效果，整个Demo地址为：http://download.csdn.net/detail/ming_147/9732963，也可以关注公众号后回复“行情k线图”，就会发送给您。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc3_01.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "相对来说比较简单的一个小Demo,为什么来说简单呢，一数据是固定的，二，时间是固定的，相比较实际项目中来说，这已经相当的简单了，我们可以简单的分一下步骤模块，然后再按照依次来进行实现，通过上面的图片，我们可以大致分为，边框，横线，纵线，底部时间，左边刻度，柱状图（蜡烛图），十字光标这几个部分，好，分好之后，我们就来一步步实现吧。\n由于代码稍多，为显得代码结构清晰，我们可以先写一个父类，用于实现边框，横纵线，及底部时间，左部刻度的绘制，柱状图（蜡烛图）及十字光标我们放在子类中实现。\n自定义一个父类继承于View,实现其构造方法，在onMeasure方法里设置View的大小："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc3_02.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "这里简单对两个类型做下解释："
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "MeasureSpec.EXACTLY是精确尺寸，当我们将控件的layout_width或layout_height指定为具体数值时如：andorid:layout_width=“50dip”，或者为FILL_PARENT是，都是控件大小已经确定的情况，都是精确尺寸。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "MeasureSpec.AT_MOST是最大尺寸，当控件的layout_width或layout_height指定为WRAP_CONTENT时，控件大小一般随着控件的子空间或内容进行变化，此时控件尺寸只要不超过父控件允许的最大尺寸即可。因此，此时的mode是AT_MOST，size给出了父控件允许的最大尺寸。\n设置完大小之后，我们先在构造方法里初始化一些信息，比如背景色，画笔："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc3_03.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "重写onDraw方法，并在方法内绘制相关信息。绘制边框，距离左上各位10，距离右边为View宽度－10，距离底部为View高度－50："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc3_04.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "绘制横线，因为要留出一段区域做刻度绘制，所以，距离左边要有一段距离，这里我设置的100，所以每条横线的起始位置一定，都是100，因为边框的最右边为View宽度－10，所以横线的终止位置也是一致，起始y的位置和终止y的位置应当一致，按照一定的距离等分开来，这里的lineSize是要分成几份，我定义的是4份，则每份的长度就为：（当前View的高度-距离底部的距离－距离上部的距离）／lineXSize："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc3_05.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "绘制纵线，其原理和绘制横线差不多，起始x的位置为距离左边的距离既100，则每份的宽度就是，（当前View的宽度－距离左边的距离－距离右边的距离）／要分为几份，这里我定义的是lineYSize=3："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc3_06.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "绘制底部时间，times是自己定义的一个时间数组，其坐标位置和纵线类似，y值是固定不变的，x轴增加的距离和纵线一致："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc3_07.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "绘制Y轴价格刻度，价格刻度的绘制，就和绘制横线有点类似了，price是自己定义的一个刻度数组："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc3_08.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "经过以上父 类中的绘制，基本的边框，横线，纵线，底部时间，左部价格刻度，就完成了，接下来就是柱状图和十字光标：\n自定义一个view集成于父类，实现其构造方法，初始化一些信息，设置画笔为实心的："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc3_09.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "绘制蜡烛图之前，我们需要初始化一些我们需要的数据，这里我定义了一个javaBean,里面我定义了一些数据，开盘，收盘，最高，最低，日期，实现其构造方法和get,set方法。"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc3_10.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "javaBean实现之后，我们就可以添加模拟数据了，毕竟不是真实的项目中，所以数据，只能自己去创造了，listData是自己定义存储数据的："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc3_11.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc3_12.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc3_13.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "有了数据，我们就可以绘制蜡烛图了，如果开盘大于昨收，蜡烛图就为红色，否则就为绿色，因为，纵轴起始位置是从200开始算的，所以我们取得的最大与最小值再计算的时候，要减去其起始位置，和线的宽度；"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "每个蜡烛图的高就为：（当前View的高度－距离上下的距离）－当前位置最高值＊（当前View的高度－距离上下的距离）／要分的份数（这里是200到280共80份）；"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "每个蜡烛图的低就为：（当前View的高度－距离上下的距离）－当前位置最低值 ＊（当前View的宽度－距离左右的距离）／要分的份数（这里是3个月共92天）；"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "每个蜡烛图的左边就是：（当前View的宽度－距离左右的距离）／要分的份数（这里是3个月共92天）＋当前View距离左边的距离＊第几个蜡烛图；"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "每个蜡烛图的右边就是：蜡烛图的左边＋（当前View的宽度－距离左右的距离）／要分的份数（这里是3个月共92天）；"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "绘制蜡烛图的中间线，x 轴的起始位置都是：蜡烛图的左边＋（当前View的宽度－距离左右的距离）／要分的份数（这里是3个月共92天）／2，y轴的起始位置为：每个蜡烛图的高－10，y轴的终止位置为：每个蜡烛图的低＋10；"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc3_14.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "绘制十字光标，就需要重写onTouchEvent方法："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc3_15.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "获取好位置之后，我们就可以在onDraw方法里绘制十字光标了，因为 View距离左边和底部有一定的距离，所以在这距离里，我们可以不设置十字光标，十字光标，两条线，一条横线，一条纵线："
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "横线：起始x轴的位置为当前View距离左边的距离，终止位置就是当前View宽度－10，起始和终止都是手指移动的y值；"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "纵线：起始x轴的位置就是手指移动的x坐标，起始y值为当前View距离上边的距离，终止y值就是当前View距离底部的距离；"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "左边变化刻度值：x值为固定的，我这里给出的是75，y坐标是移动的y值＋3，其值的计算是：（当前View的高度－距离上下的距离－手指移动的y坐标）／（当前View的高度－距离上下的距离）／要分的份数（这里是200到280共80份）＋初始位置刻度。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "底部时间变化，x坐标为手指移动的x值－20，y坐标为当前View的高度－35，尽量在底部线的下面，值的计算是：先得到的索引，然后再从listData集合里取得时间。索引的计算方式为：（当前手指移动的x坐标／（当前 View的宽度－左右的距离及几根线的宽度）／总的天数）－（当前 View的宽度－左右的距离及几根线的宽度）／总的天数；"
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc3_16.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "通过以上的代码我们就可以绘制出文章开头的效果了,具体使用，只需要在用到的Xml里引用就OK了："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/image/banner_desc3_17.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+}
+]
+}
+]
+}
