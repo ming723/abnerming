@@ -1,0 +1,37 @@
+{
+"liveTitle": "APP性能优化之内存优化",
+"livedesc": "简介：1、讲解Android系统内存管理方式里的内存分配回收，并实战演示监控内存的方法。 2、讲解APP优化的几种方法，主要涉及数据结构优化、对象复用优化、内存泄漏优化方法，最后是演示效果。 3、APP内存优化里主要的OOM问题进行剖析，讲解优化方法和方案，并实战代码讲解效果。",
+"liveAuth": "13669",
+"liveList": [
+{
+"liveTitle": "内存优化-课程介绍",
+"selected": 1,
+"videoId": 0,
+"liveAuth": "13669"
+},
+{
+"liveTitle": "内存优化-Android的内存管理方式",
+"selected": 0,
+"videoId": 1,
+"liveAuth": "13670"
+},
+{
+"liveTitle": "内存优化-APP内存优化方法",
+"selected": 0,
+"videoId": 2,
+"liveAuth": "13671"
+},
+{
+"liveTitle": "内存优化-OOM问题优化（上）",
+"selected": 0,
+"videoId": 3,
+"liveAuth": "13672"
+},
+{
+"liveTitle": "内存优化-OOM问题优化（下）",
+"selected": 0,
+"videoId": 4,
+"liveAuth": "13673"
+}
+]
+}
