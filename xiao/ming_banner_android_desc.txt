@@ -1,0 +1,472 @@
+{
+"bannerList": [
+{
+"bannerTitle": "Kotlin Primer · 第一章 · 启程",
+"time": "作者：Kotlin   时间：2017-05-01",
+"bannerDes": [
+{
+"imagePic": "",
+"color": "#1e90ff",
+"bgcolor": "#ffffff",
+"content": "Kotlin 语言是一种新的静态类型编程语言，可运行于 JVM 环境同时也能用来开发 Android 应用。本章为学习和使用这一新兴的语言做准备，并讨论在一些常见开发环境中运行 Kotlin 程序的方法。"
+},
+{
+"imagePic": "",
+"color": "#222222",
+"bgcolor": "#ffffff",
+"content": "1.1 Kotlin语言介绍"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "Kotlin 是 JetBrains 在 2010 年推出的基于 JVM 的新编程语言。开发者称，设计它的目的是避免 Java 语言编程中的一些难题。比如：在 Kotlin 中类型系统控制了空指针引用，可以有效避免 Java 中常见的NullPointException。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "作为一个跨平台的语言，Kotlin 可以工作于任何 Java 的工作环境：服务器端的应用，移动应用（Android版），桌面应用程序。 "
+},
+{
+"imagePic": "",
+"color": "#222222",
+"bgcolor": "#ffffff",
+"content": "1.2 Kotlin的优势"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "相比于 Java，Kotlin 有着更好的语法结构，安全性和开发工具支持。Kotlin 中没有基础类型，数组是定长的，泛型是安全的，即便运行时也是安全的。此外，该语言支持闭包，还可通过内联进行优化。不过，它不支持检查异常（Checked Exceptions），许多语言设计者认为这是它的瑕疵。不论如何，重要的是 Java 和 Kotlin 之间的互操作性：Kotlin 可以调用 Java，反之亦可。"
+},
+{
+"imagePic": "",
+"color": "#222222",
+"bgcolor": "#ffffff",
+"content": "1.3 准备工作"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "Intellij IDEA 是 JetBrains 提供的继承开发环境，可以用来开发 Kotlin 应用程序。如果你是一名 Android 开发者，你也可以使用 Android Studio 来开发 Kotlin 程序。如你所知，Android Studio 其实就是 Intellij IDEA 的插件扩展，Intellij IDEA 是由 JetBrains 所开发，而 Kotlin 同样是由 JetBrains 创造的，其中的兼容性自然不用多说。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "在安装好 Intellij IDEA 后，还需要安装 Kotlin 插件。说明：从 Intellij 15 开始，已经自带了 Kotlin 插件，无需再次下载，而 Android Studio 缺没有。不过还是建议你运行一下下面的步骤，检查一下插件是否为最新版。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "首先启动你的 IDE，按下快捷键 Ctrl+, (Mac 下为 command+,) 打开Preference 界面。点击左侧 Plugin 栏，打开插件界面。点击 Browse repositories（如图1-3-1）。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "在弹出的窗口上方，搜索 “Kotlin”，选中 Kotlin 和 Kotlin Extension For Android。点击右侧的 Install。安装完成后按钮会变成 Restart，再次点击重启 IDE。刚刚安装的这两个插件分别Kotlin 语言支持包，和我们稍后会用到的Android 开发的扩展包。一点小技巧：也许由于网络环境原因，会造成下载失败。可以根据弹出窗口中提示的(或直接在 JetBrains 插件市场搜索)下载链接，使用国内网盘的离线下载功能，下载到网盘后再从网盘下载到本地。 "
+},
+{
+"imagePic": "",
+"color": "#222222",
+"bgcolor": "#ffffff",
+"content": "1.4 Hello Kotlin"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "1.4.1 第一个Kotlin程序"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "首先我们打开 Intellij 选中 Create a new project 选项后可以看到如下界面。在 Additional Libraries and Frameworks 选项框中，如果你已经成功安装 Kotlin 插件，可以直接勾选 Kotlin(Java) 选项。再点击下方的 Create 按钮，在弹出的 Create Kotlin Java Runtime Library 选项框中，我们选择 Use library from plugin 并确定(如图1-4-1)。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "点击 Next，填写工程名和路径，这里我们创建一个名为 Hello 的工程，并点击 Finish 完成创建(如图1-4-2)。首次创建工程需要等待一段时间，编译器这个时候正在帮助我们下载一些必要的依赖项。工程构建完成后，右键工程目录的 src 图标，选择 New -> Kotlin File，这里我们新建一个名为 Hello 的 Kotlin 源码文件(如图1-4-3)。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "看一下左侧的工程目录，src 文件夹中存放的是源码，可以在这里新建包或类；Hello.iml 文件声明了一些项目所需的环境依赖，我们不用关心。于是，终于可以开始激动人心的编码了。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "Kotlin 程序非常简单，简单到只需要三行代码，相比起 Java 连包名都不是必须的。"
+},
+{
+"imagePic": "",
+"color": "#ffffff",
+"bgcolor": "#222222",
+"content": "fun main(args: Array<String>) {\nprint(“hellokotlin!”)\n}"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "按下 Ctrl+R 快捷键，或者右上角绿色三角形，运行写好的程序(如图1-4-5)"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "同 Java 语言一样，Kotlin 程序主入口也是 main() 函数。但是作为函数是一等公民的语言，它不需要像 Java 那样必须声明一个类。在 Kotlin 中，函数的声明用 fun 表示，变量也与 Java 不同，是变量名在前，变量类型在后，中间用冒号隔开。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "同时你也一定发现了，Kotlin 程序非常简洁，连分号也不需要写，当然如果你是刚从 Java 过渡来的，改不掉或不想改掉这个习惯，写上了也不会有错，因为它是可选的。同时，我们还可以发现，在左侧的工程目录多了一个红色名为 out 的目录，它是用来存放 .class 文件的。"
+},
+{
+"imagePic": "",
+"color": "#222222",
+"bgcolor": "#ffffff",
+"content": "1.4.2 面向对象的Kotlin程序"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "下面我们将 Hello 程序改一改，为它加入一些面向对象的特性。我们创建一个包，并在包下新建名为Preson的类。"
+},
+{
+"imagePic": "",
+"color": "#ffffff",
+"bgcolor": "#222222",
+"content": "package com.kymjs.kotlin.helloobj\nclass Preson(val name: String) {\nfun printName() {\nprintln(name)\n}\n}"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "再回到Hello.kt文件中，修改 main() 函数"
+},
+{
+"imagePic": "",
+"color": "#ffffff",
+"bgcolor": "#222222",
+"content": "import com.kymjs.kotlin.helloobj.Preson\nfun main(args: Array<String>) {\nprintln(“hellokotlin!”)\nPreson(“ZhangTao”).printName()\n}"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "再次按下 Ctrl+R 快捷键，或者右上角绿色三角形，运行写好的程序(如图1-4-6)"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "细心查看代码，Kotlin 创建对象的时候并不需要new关键字，而是像调用普通方法一样直接调用构造方法就可以了。同时，由于两个文件不在同一个包下，需要导入Preson类所在的包才能找到，当然，编译器已经帮我们解决了繁杂的导包过程。 "
+}
+]
+},
+{
+"bannerTitle": "打造一款小巧且高效的线性图表",
+"time": "作者： linjiang   时间：2017-05-17",
+"bannerDes": [
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "如果项目中需要用到图表，我们第一时间可能想到的就是 Github 上叫作 MPAndroidChart 的库，它拥有丰富的定制化属性并同时支持各种图表，包括线性图、饼状图、雷达图等，炫酷得不行。但是我们大多时候可能只是需要其中一种，例如线性图，集成 MPAndroidChart 就变得得不偿失了，即使进行抽离，那复杂的层级关系和属性配置估计也够时间让自己实现一波了。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "本文基于以上原因并结合实际开发需求打造的一款小巧且高效的线性图表。小巧体现在整个库的所有实现集中于一个java文件，非常便于集成并自定义修改；而高效则是相对而言，综合对Github上一些同类库的分析，大部分库对于数据量的支持以及性能方面没有很好地进行优化，停留在展示和学习层面，在实际应用方面还有待完善。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "闲话不多说，先展示我们最终实现的效果："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_android_desc_01.png",
+"color": "#222222",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#222222",
+"bgcolor": "#ffffff",
+"content": "确定传入数据的结构"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "很明显，与平常所见的最明显的区别就是本图表支持多条线。对于一条线，我们定义为一组点集合，用 List 表示，那么多条线我们这里采用的是 Map，key为线的索引，value为线的数据集合，通过限定传入数据的方式来达到 KEY 的连续性，KEY 的连续性有助于之后的遍历。"
+},
+{
+"imagePic": "",
+"color": "#222222",
+"bgcolor": "#ffffff",
+"content": "确定画图区域"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "除开 View 本身的 padding 外，整个视图分为了3个区域：x轴、y轴 以及 lines所在区域，三个区域的大小和位置都是相对的，唯一需要变化的就是y轴，因为其刻度文字的长短需要根据传入的数据改变，因此我们定义方法 calcAreas 来保证每次重新填充数据后，相应的三个区域可以适配："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_android_desc_02.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "xArea、yArea 和 linesArea 分别表示 x轴区域、y轴区域 以及 画线区域，其中 baseY 就是根据传入的数据计算得到的最大值。这样，三个区域的大小也就确定了。"
+},
+{
+"imagePic": "",
+"color": "#222222",
+"bgcolor": "#ffffff",
+"content": "确定传入数据每个点的坐标"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "首先要明确一点，坐标都是相对该 View 的 Canvas 而不是我们上一步得到的 linesArea，以防稍后理解混淆。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "对于X：首先需要知道可见区域最多可显示的点数，我们定义为 maxOfVisible，当然，如果传入的数据没有超过限定那么是多少就是多少，这样两个点之间的间距就是 linesArea 的宽度与 (maxOfVisible-1) 的均分，最后每个点的x就为：linesArea.left + realBetween * i"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "对于Y：由于View坐标系的Y默认是从上往下递增的，因此对于每个点，其值越大，y坐标应该越小，约定y最大时就是坐标0，基于以上原则得到的最终计算公式为：linesArea.top + linesArea.height() * (1 - 当前点的值 / maxValueOfY)))即当前点的值与最大值的占比乘上实际 lineArea 的高度，就是其y相对最大值的y的距离。"
+},
+{
+"imagePic": "",
+"color": "#222222",
+"bgcolor": "#ffffff",
+"content": "开始画线"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "各个点的坐标确认后就需要在 onDraw 中利用 Canvas 来画线了。我们先来看看需要支持的线的类型有哪些："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_android_desc03.png",
+"color": "#222222",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "忽略最后的坐标轴的变化，可以看到我们需要支持的类型包括：曲线、线段、虚线以及是否填充这几种类型，但是其中虚线和是否填充是可用通过修改Paint的属性来实现，同时 Canvas 包含有直接 DrawLine 的方法，因此，这里的难点便是如何画曲线。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "曲线就必须要了解一下贝塞尔曲线的概念了，但限于篇幅，需要具体了解的请自行搜索。Path 提供了基于贝塞尔曲线公式的 cubicTo方法 来连接下一个点，但是需要提供两个控制点，控制点的不同，最终的构建的曲线区别是非常大的，因此这是一个仁者见仁的选择。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "我们这里的两个点选取的是x位于起始和终止点的中点，y分别与起始和终止平行的两个点，如果假设 a(x0,y0)，b(x1,y1) 分别代表起始和终止点，那么两个控制点的坐标就分别是：((x0+x1)/2,y0)，((x0+x1)/2,y1)，这样一种类似于正弦波的曲线就构造出来了。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "同时，虽然前面说到线段可以通过 Canvas 的 drawLine 方式实现，但是为了和曲线统一，方便修改 line 的颜色、大小、是否填充等，我们这里把线段也修改为 path 方案。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "如果我们运行代码，我们应该会看到，绘制出来的 line 居然超出了 linesArea 区域，在我们排除的 View 的 padding 区域也有，这显然不符合预期，因此我们需要对其进行裁剪，Canvas 的 clipRect方法 使得指定区域以外的所有操作不会生效，我们可以通过该方法实现，但是如果这样，我们的x和y轴区域岂不是也看不到了？所以我们采用 Canvas 的分层原理，将 linesArea 区域的所有相关操作保留在一层，就不会影响到其它区域了："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_android_desc_04.png",
+"color": "#222222",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#222222",
+"bgcolor": "#ffffff",
+"content": "手势移动"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "到这儿离最终效果就不远了，我们还需要处理过多点的情况，这时候剩余的点虽然已经 draw 出来了但是用户无法看见，因此就需要支持手势左右拖动了。注意，这里的拖动千万不要理解为不断跟随手指移动的距离来修改每个点的坐标，我们需要转换思维理解，伟大的相对论提到，如果你想进一步，让别人退一步也是可以的，所以我们可以利用 Canvas 的 translate方法 来平移画布，使我们想要看到的部分始终位于屏幕区域：canvas.translate(offset, 0);"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "另外，在手指释放的一刻，为了符合物理习惯预期，还需要通过 Scroller 进行 fling 处理，相关的知识点还包括了 VelocityTracker，由于并非本文重点，所以请自定了解或直接参见源码。现在，手指的处理应该符合预期了，但是也不能让它一直滚啊，毕竟数据是有限的，所以我们还需要为它约束滚动的区间，当 Canvas 的最右边刚好是最后一个点，那么我们就不能让 Canvas 继续滚动了，这期间 Canvas 平移的总距离就应该是：maxOffset = 最后一个点的x坐标 - Canvas的宽度完善好这一切后，就达到了如下效果图："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_android_desc_05.png",
+"color": "#222222",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "我们注意到，上图中我们还没实现的包括 边缘拖动效果、动画已经点击事件效果，这里我们分别简单讲解一下。"
+},
+{
+"imagePic": "",
+"color": "#ff0000",
+"bgcolor": "#ffffff",
+"content": "拖动效果"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "这是利用 EdgeEffect类 来实现的，该类的具体用法似乎很少，更不用说源码分析，因此这里参考的是 ScrollView 内部的实现，有2个注意的地方，第一是效果绘制的区域及方向，默认是基于 Canvas 的左上角，向下回弹的效果，所以我们需要将其进行旋转，同时平移到可见区域的左右两边；第二点是当 fling 到 Canvas边缘 时的情况，由于不是我们手动的拖动，所以 EdgeEffect 提供了 onAbsorb方法，只需要传入速度就可以模拟出同样的效果，但是该方法正确的做法是只传入到达边缘时的那一刻的速度就行了，具体实现如下："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_android_desc_06.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#ff0000",
+"bgcolor": "#ffffff",
+"content": "动画"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "这种动画类似我们提着绳子的一头摆动的常见，这种情况下会形成一个向前传递的波动效果。也就是说，每个点的动画效果是一样的——上下运动（用 OvershootInterpolator 插值器模拟），但是启动这个动画的时间不同，整体来看，是一个从左向右的先后顺序，因此我们最终的实现过程是启动一个线性动画依次遍历线上的每个点（用 LinearInterpolator 插值器模拟），每到一个点就启动其对应的上下运动的动画，这样就完成了整个动画的过程："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_android_desc_07.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#ff0000",
+"bgcolor": "#ffffff",
+"content": "点击效果"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "点击肯定是不能使用 setOnClickListener 的方式了，我们仍是在 onTouchEvent 中进行处理，先思考一下，我们如何区分点击和拖动？其实很简单，虽然没有什么 onIntercept 之类的方法，也没有 focus 之类的状态，但是我们知道，点击与拖动的最大不同就是按下和抬起的位置是大约一致的，这样就可以区分了；其次，如何判定我们点击的是哪一条线上的哪一个点呢，这还是得利用到我们手指的坐标和当前偏移位置两个变量。由于手指的坐标始终是相对 View 的左上角原点而言的，所以需要与 Canvas 保持一致进行偏移："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_android_desc_08.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "另外，假设两点间的距离是 a，当前手指落下的x坐标是 b，如果我们需要得到当前按下的点的索引是t，那么有如下结论：a*t <= b, a*(t+1) >= b，也就是说，t 就约为 b / a，我们只需根据小数点来进行判定即可；当存在多条线的情况时，我们还需要确定按下的是哪条线，这个就相对简单，由于 Y轴 并不存在偏移，所以只需要进行简单的比较运算，手指的y例哪条线近，点击的就是哪条，当然前提是在阈值范围内，代码较长，具体请参见源码`onTap`方法。"
+},
+{
+"imagePic": "",
+"color": "#222222",
+"bgcolor": "#ffffff",
+"content": "性能优化"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "如果现在我们直接将源码集成到项目中，我们会发现效果并不理想，有卡顿甚至 Crash 的情况出现，这其实是因为我们在此之前一直都是将整条线都完全绘制到了 Canvas 上，即使是不可见的部分，那么当数据量非常多，甚至是多条线的情况，那么随着拖动，CPU和PU的负荷是很大的，因此我们需要优化，其实大家已经猜到了，方案就是仅绘制可见区域的部分。"
+},
+{
+"imagePic": "",
+"color": "#ff000000",
+"bgcolor": "#ffffff",
+"content": "仅绘制可见区域"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "如何确定可见区域相应的点区间可以参考上面如何确定点击的是线上的哪个点的方案，我们将可见区域的左边缘视为手指所点击的x坐标，那么具体是哪个点我们就知道了，同理可见区域的右边缘对应的点，但是这里需要注意的是，我们计算得到的点是在两个边缘以内，那么我们吧他们之间的点连接起来形成的部分就与两个边缘存在部分空白，因此我们还需要额外增加一个边缘以外的点。"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "确定如何计算点区间的方案后，只需要每次在 onDraw 中重绘时调用即可，但是这样也无形中增加了CPU的压力，因为每次重绘都要计算，所以我们还需要优化一下，仔细观察其实只要计算出来的点区间在下一次没有出现跨越可见区域的两个边界，就不需要重新计算的，因此我们可以增加判定来减少："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_android_desc_09.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "但是由于手指滑动或 fling 计算出的 offset 不是连续按1px递增/减的，所以该判定的有效率在速度非常快的时候是比较低的。"
+},
+{
+"imagePic": "",
+"color": "#ff000000",
+"bgcolor": "#ffffff",
+"content": "离屏绘制"
+},
+{
+"imagePic": "",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": "其实有一种更优的方案来解决性能问题，便是离屏，具体请自行搜索，简单概括就是将需要的部分先绘制到一个某个 Canvas 上（内部即Bitmap），该 Canvas 并不是当前 onDraw 这个 Canvas，然后当需要呈现的时候就直接将之前离屏的这个 Bitmap 绘制即可，这比绘制 Path 要高效得多，但是由于我们的计算的点区间是不断变化的，且可能存在大量的数据，所以不可用此方案，但是我们回到坐标轴上看，y轴区域其实在滚动或重绘时，都是不变的，我们就可以将这部分进行优化来减少负荷："
+},
+{
+"imagePic": "https://raw.githubusercontent.com/ming723/abnerming/master/xiao/fileimage/home_android_desc_10.png",
+"color": "#666666",
+"bgcolor": "#ffffff",
+"content": ""
+}
+]
+}
+]
+}
