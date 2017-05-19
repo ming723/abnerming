@@ -1,0 +1,79 @@
+{
+"liveTitle": "Java高并发秒杀API之web层",
+"livedesc": "简介：本门课程是《Java实现高并发秒杀API》系列课程的第三门课，主要介绍秒杀业务Web层的设计和实现，使⽤用SpringMVC整合spring,实现秒杀restful接⼝。秒杀项目使用流行的SpringMVC+Spring+MyBatis整合框架进行开发。非常值得学习呦！",
+"liveAuth": "11726",
+"liveList": [
+{
+"liveTitle": "前端交互流程设计",
+"selected": 1,
+"videoId": 0,
+"liveAuth": "11726"
+},
+{
+"liveTitle": "学习Restful接口设计",
+"selected": 0,
+"videoId": 1,
+"liveAuth": "11727"
+},
+{
+"liveTitle": "使用SpringMVC理论",
+"selected": 0,
+"videoId": 2,
+"liveAuth": "11728"
+},
+{
+"liveTitle": "整合配置SpringMVC框架",
+"selected": 0,
+"videoId": 3,
+"liveAuth": "11729"
+},
+{
+"liveTitle": "使用SpringMVC实现Restful接口(上)",
+"selected": 0,
+"videoId": 4,
+"liveAuth": "11730"
+},
+{
+"liveTitle": "使用SpringMVC实现Restful接口(下)",
+"selected": 0,
+"videoId": 5,
+"liveAuth": "11731"
+},
+{
+"liveTitle": "基于bootstrap开发页面结构",
+"selected": 0,
+"videoId": 6,
+"liveAuth": "11732"
+},
+{
+"liveTitle": "cookie登录交互（上）",
+"selected": 0,
+"videoId": 7,
+"liveAuth": "11733"
+},
+{
+"liveTitle": "cookie登录交互（下）",
+"selected": 0,
+"videoId": 8,
+"liveAuth": "11734"
+},
+{
+"liveTitle": "计时交互",
+"selected": 0,
+"videoId": 9,
+"liveAuth": "11735"
+},
+{
+"liveTitle": "秒杀交互",
+"selected": 0,
+"videoId": 10,
+"liveAuth": "11736"
+},
+{
+"liveTitle": "web层课程总结",
+"selected": 0,
+"videoId": 11,
+"liveAuth": "11737"
+}
+]
+}

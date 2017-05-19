@@ -1,0 +1,55 @@
+{
+"liveTitle": "自定义实现日历控件",
+"livedesc": "简介：从零开始，循序渐进，教你如何搭建Android自定义控件，同时传授背后的理论知识。",
+"liveAuth": "13641",
+"liveList": [
+{
+"liveTitle": "日历控件课时一：教学大纲",
+"selected": 1,
+"videoId": 0,
+"liveAuth": "13641"
+},
+{
+"liveTitle": "日历控件课时二：自定义控件基础",
+"selected": 0,
+"videoId": 1,
+"liveAuth": "13642"
+},
+{
+"liveTitle": "日历控件课时三：日历Layout",
+"selected": 0,
+"videoId": 2,
+"liveAuth": "13643"
+},
+{
+"liveTitle": "日历控件课时四：日历业务处理(上)",
+"selected": 0,
+"videoId": 3,
+"liveAuth": "13644"
+},
+{
+"liveTitle": "日历控件课时五：日历业务处理(下)",
+"selected": 0,
+"videoId": 4,
+"liveAuth": "13645"
+},
+{
+"liveTitle": "日历控件课时六：定制UI.mp4",
+"selected": 0,
+"videoId": 5,
+"liveAuth": "13646"
+},
+{
+"liveTitle": "日历控件课时七：使用日历控件",
+"selected": 0,
+"videoId": 6,
+"liveAuth": "13647"
+},
+{
+"liveTitle": "日历控件课时八：课程总结",
+"selected": 0,
+"videoId": 7,
+"liveAuth": "13648"
+}
+]
+}

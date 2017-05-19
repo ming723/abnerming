@@ -1,0 +1,85 @@
+{
+"liveTitle": "Python-面向对象",
+"livedesc": "简介：面向对象是目前编程语言里面非常主流的一种思想。Python对于面向对象有非常好的实现。同时，借助Python灵活的语法，可以实现一些很酷的面向对象特性。",
+"liveAuth": "13273",
+"liveList": [
+{
+"liveTitle": "Python面向对象-课程介绍",
+"selected": 1,
+"videoId": 0,
+"liveAuth": "13273"
+},
+{
+"liveTitle": "Python-面向对象概念",
+"selected": 0,
+"videoId": 1,
+"liveAuth": "13261"
+},
+{
+"liveTitle": "用Python定义类",
+"selected": 0,
+"videoId": 2,
+"liveAuth": "13262"
+},
+{
+"liveTitle": "Python面向对象-定义类的属性",
+"selected": 0,
+"videoId": 3,
+"liveAuth": "13263"
+},
+{
+"liveTitle": "Python面向对象-定义类的方法",
+"selected": 0,
+"videoId": 4,
+"liveAuth": "13264"
+},
+{
+"liveTitle": "Python面向对象-类的继承",
+"selected": 0,
+"videoId": 5,
+"liveAuth": "13265"
+},
+{
+"liveTitle": "类的多态",
+"selected": 0,
+"videoId": 6,
+"liveAuth": "13266"
+},
+{
+"liveTitle": "Python面向对象-magicmethod简介",
+"selected": 0,
+"videoId": 7,
+"liveAuth": "13267"
+},
+{
+"liveTitle": "Python面向对象-对象的实例化",
+"selected": 0,
+"videoId": 8,
+"liveAuth": "13268"
+},
+{
+"liveTitle": "Python面向对象-类与运算符",
+"selected": 0,
+"videoId": 9,
+"liveAuth": "13269"
+},
+{
+"liveTitle": "Python面向对象-类的展现",
+"selected": 0,
+"videoId": 10,
+"liveAuth": "13270"
+},
+{
+"liveTitle": "Python面向对象-类的属性控制",
+"selected": 0,
+"videoId": 11,
+"liveAuth": "13271"
+},
+{
+"liveTitle": "Python面向对象-课程总结",
+"selected": 0,
+"videoId": 12,
+"liveAuth": "13272"
+}
+]
+}

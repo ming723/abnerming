@@ -1,0 +1,49 @@
+{
+"liveTitle": "Canvas 绘制时钟",
+"livedesc": "简介：通过模仿京东商城的无延迟菜单效果，学习到菜单的结构和样式处理，菜单常见交互如何开发，介绍了普通二级菜单的问题，并通过逐步优化去解决该问题。",
+"liveAuth": "11254",
+"liveList": [
+{
+"liveTitle": "Canvas时钟展示",
+"selected": 1,
+"videoId": 0,
+"liveAuth": "11254"
+},
+{
+"liveTitle": "Canvas绘制时钟--几何模型",
+"selected": 0,
+"videoId": 1,
+"liveAuth": "11255"
+},
+{
+"liveTitle": "Canvas时钟外边框圆",
+"selected": 0,
+"videoId": 2,
+"liveAuth": "11257"
+},
+{
+"liveTitle": "Canvas绘制时钟内容",
+"selected": 0,
+"videoId": 3,
+"liveAuth": "11256"
+},
+{
+"liveTitle": "Canvas静态的时分秒",
+"selected": 0,
+"videoId": 4,
+"liveAuth": "11259"
+},
+{
+"liveTitle": "Canvas动态的时分秒",
+"selected": 0,
+"videoId": 5,
+"liveAuth": "11260"
+},
+{
+"liveTitle": "Canvas时钟特效",
+"selected": 0,
+"videoId": 6,
+"liveAuth": "11261"
+}
+]
+}

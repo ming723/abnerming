@@ -1,0 +1,61 @@
+{
+"liveTitle": "不一样的RecyclerView优雅实现复杂列表布局",
+"livedesc": "简介：本课程介绍一种，Android5.0之后可取代之前ListView和GridView新的列表控件RecyclerView，告诉大家一些常见的复杂布局，如何用该控件更快捷优雅的实现出来，以及她和之前列表控件的区别和联系，快来掌握她吧，她等着你哦！",
+"liveAuth": "13038",
+"liveList": [
+{
+"liveTitle": "使用RecyclerView优雅实现复杂布局-课程介绍",
+"selected": 1,
+"videoId": 0,
+"liveAuth": "13038"
+},
+{
+"liveTitle": "RecyclerView-基础知识介绍",
+"selected": 0,
+"videoId": 1,
+"liveAuth": "13039"
+},
+{
+"liveTitle": "RecyclerView编码-多种样式的列表实现(上)",
+"selected": 0,
+"videoId": 2,
+"liveAuth": "13040"
+},
+{
+"liveTitle": "RecyclerView编码-多种样式的列表实现(下)",
+"selected": 0,
+"videoId": 3,
+"liveAuth": "13041"
+},
+{
+"liveTitle": "RecyclerView编码-Grid和List混排的recyclerView",
+"selected": 0,
+"videoId": 4,
+"liveAuth": "13042"
+},
+{
+"liveTitle": "RecyclerView优雅实现上半段",
+"selected": 0,
+"videoId": 5,
+"liveAuth": "13043"
+},
+{
+"liveTitle": "RecyclerView优雅实现下半段",
+"selected": 0,
+"videoId": 6,
+"liveAuth": "13044"
+},
+{
+"liveTitle": "RecyclerView优雅实现多种布局的概括和思路",
+"selected": 0,
+"videoId": 7,
+"liveAuth": "13045"
+},
+{
+"liveTitle": "使用RecyclerView优雅实现复杂布局-课程总结",
+"selected": 0,
+"videoId": 8,
+"liveAuth": "13046"
+}
+]
+}

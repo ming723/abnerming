@@ -1,0 +1,55 @@
+{
+"liveTitle": "Java高并发秒杀API之Service层",
+"livedesc": "简介：本门课程是《Java实现高并发秒杀API》系列课程的第二门课，主要介绍秒杀业务Service层的设计和实现，基于Spring托管Service实现类，并使用了Spring声明式事务。秒杀项目使用流行的SpringMVC+Spring+MyBatis整合框架进行开发。非常值得学习呦！",
+"liveAuth": "11717",
+"liveList": [
+{
+"liveTitle": "Service开发之前说明",
+"selected": 1,
+"videoId": 0,
+"liveAuth": "11717"
+},
+{
+"liveTitle": "秒杀Service接口设计",
+"selected": 0,
+"videoId": 1,
+"liveAuth": "11718"
+},
+{
+"liveTitle": "秒杀Service接口实现1",
+"selected": 0,
+"videoId": 2,
+"liveAuth": "11719"
+},
+{
+"liveTitle": "秒杀Service接口实现2",
+"selected": 0,
+"videoId": 3,
+"liveAuth": "11720"
+},
+{
+"liveTitle": "使用Spring托管Service依赖理论",
+"selected": 0,
+"videoId": 4,
+"liveAuth": "11721"
+},
+{
+"liveTitle": "使用Spring托管Service依赖配置",
+"selected": 0,
+"videoId": 5,
+"liveAuth": "11722"
+},
+{
+"liveTitle": "使用Spring声明式事务配置",
+"selected": 0,
+"videoId": 6,
+"liveAuth": "11723"
+},
+{
+"liveTitle": "使用集成测试Service逻辑",
+"selected": 0,
+"videoId": 7,
+"liveAuth": "11724"
+}
+]
+}
